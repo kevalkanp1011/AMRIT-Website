@@ -46,7 +46,7 @@ gallery:
 
 ## our works
 features:
-  title: Principles of Our Digital Public Health Team  <br /> 
+  title: Principles of Our Digital Public Health Team
   features_list:
     - title: Innovation with Purpose
       subtitle: Solving real healthcare challenges through technology
