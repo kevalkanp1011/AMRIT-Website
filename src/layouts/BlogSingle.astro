@@ -45,7 +45,10 @@ const { Content } = await post.render();
         <div class="content">
           <Content />
         </div>
-        <Button href={post.data.link} style={'primary'} children={'Learn more'} rel={'noopener noreferrer'} client:load/>
+        {post.data.link && 
+          <Button href={post.data.link} style={'primary'} children={'Learn more'} rel={'noopener noreferrer'} client:load/>
+          }
+        
       </div>
     </div>
   </div>
