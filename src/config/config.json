@@ -25,6 +25,14 @@
       "link": "https://github.com/PSMRI"
     }
   },
+  "join_us":{
+    "title": "Partner with Us to Drive Impact",
+    "description": "Join us in our mission to transform communities through innovation and collaboration. We are actively seeking partnerships with forward-thinking technical experts, generous donors, and visionary knowledge leaders. Together, we can create sustainable change and bring our vision to life.",
+    "button": {
+      "label": "Become a partner",
+      "link": "https://github.com/PSMRI"
+    }
+  },
 
   "disqus": {
     "enable": true,
