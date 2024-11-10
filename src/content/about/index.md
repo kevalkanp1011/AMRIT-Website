@@ -33,7 +33,7 @@ counter:
     
 # Gallery
 gallery:
-  title: We started with one single goal Empower entrepreneurs
+  title: Driving Innovation and Collaboration for Impactful Healthcare Solutions 
   images:
     - "/images/Gallery/pt3.jpeg"
     - "/images/Gallery/img3.jpg"
@@ -46,30 +46,26 @@ gallery:
 
 ## our works
 features:
-  title: Transforming Healthcare with AMRIT <br /> 
-  button:
-    label: Download The Theme
-    link: "https://themefisher.com/astro-themes/pinwheel-astro"
-    enable: true
+  title: Principles of Our Digital Public Health Team
   features_list:
-    - title: Scaling Reach Across India
-      subtitle: 16 States, 46 Facilities, 489 Unique Users
-      content: AMRIT is expanding its presence, currently implemented across 16 states, in 46 healthcare facilities, with 489 unique users engaging in its services
-    - title:  Empowering Beneficiaries
-      subtitle: 22.64 L Unique Beneficiaries & 21.31 L Revisit Beneficiaries
-      content: Over 22.64 lakh unique beneficiaries have registered for AMRIT, with 21.31 lakh returning for ongoing care, showcasing the platform's commitment to improving healthcare access.
-    - title: Comprehensive Health Data Collection
-      subtitle: 2.09 Cr Total Records, 18.10 L Lab Tests Recorded
-      content: AMRIT has accumulated over 2.09 crore total records and recorded 18.10 lakh lab tests, ensuring comprehensive and accessible patient data for improved healthcare outcomes.
-    - title: Enhanced Screening & Diagnostics
-      subtitle: 16.11 L NCD Screenings & 1.47 L ANC Screenings Completed
-      content: AMRIT's efficient screening processes have completed 16.11 lakh NCD screenings and 1.47 lakh ANC screenings, aiding in early diagnosis and management of critical conditions.
-    - title: Boosting Digital Health Initiatives
-      subtitle: ABHA IDs Generated & EHRs Linked
-      content: AMRIT supports ABDM adoption, with numerous ABHA IDs generated and EHRs linked, aligning with national health goals for unified and secure digital health records.
-    - title: Driving Integration & Efficiency
-      subtitle: Integration with External Health Systems & Reduction in Manual Records
-      content: AMRIT integrates with multiple external health systems and national programs, reducing manual record use and enhancing service delivery efficiency across healthcare facilities.
+    - title: Innovation with Purpose
+      subtitle: Solving real healthcare challenges through technology
+      content: Our focus is on purpose-driven innovation that addresses critical public health challenges. We develop technology that enhances care delivery, improves patient outcomes, and supports healthcare workers, making a tangible difference in the healthcare landscape.
+    - title:  Open-source Solutions for Equity and Accessibility
+      subtitle: Affordable, inclusive, and accessible solutions for all
+      content: We believe digital health should be available to everyone, regardless of socio-economic status or geographic location. Our commitment to open-source development ensures that our solutions are affordable and equitable, helping to close the digital divide for underserved populations. 
+    - title: Achieving Operational Excellence
+      subtitle: Driving efficiency and scalability in healthcare solutions 
+      content: By closely collaborating with operational teams and healthcare professionals, we align our digital solutions with real-world healthcare needs. This integration streamlines processes, reduces inefficiencies, and ensures that our innovations are both sustainable and scalable within public health systems.
+    - title: User-Centered Design and Feedback Integration
+      subtitle: Designing with users at the core
+      content: We engage directly with healthcare professionals, patients, and stakeholders to create practical, intuitive tools. By incorporating continuous feedback, we ensure our solutions are responsive, adaptable, and aligned with the evolving needs of users.
+    - title: Continuous Learning and Improvement
+      subtitle: Embracing challenges for growth
+      content: In the dynamic field of digital health, we view mistakes as opportunities for learning. By fostering a culture of continuous improvement, we refine our processes, making our solutions more resilient, effective, and better aligned with the needs of our users.
+    - title: Ecosystem Collaboration
+      subtitle: Strengthening partnerships to drive impact
+      content: Collaboration with a wide range of government, technical and knowledge partners enable us to enhance integration and interoperability. Through these partnerships, we amplify the impact of our solutions across public health systems. 
     
 
 ## members

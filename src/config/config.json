@@ -13,16 +13,16 @@
 
   "settings": {
     "pagination": 6,
-    "summary_length": 100,
+    "summary_length": 200,
     "blog_folder": "blog"
   },
 
   "call_to_action": {
-    "title": "Helping teams in the world with focus",
-    "description": "Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo tellus, sed condimentum volutpat.",
+    "title": "Contribute to AMRIT and Make a Difference",
+    "description": "Join our community to help improve healthcare technology for millions. Whether you're contributing code, enhancing documentation, or providing community support, every contribution counts.",
     "button": {
-      "label": "Download The Theme",
-      "link": "https://themefisher.com/astro-themes/pinwheel-astro"
+      "label": "Start Contributing",
+      "link": "https://github.com/PSMRI"
     }
   },
 

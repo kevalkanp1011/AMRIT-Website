@@ -9,7 +9,11 @@
       "url": "/about"
     },
     {
-      "name": "Documentation",
+      "name": "Community",
+      "url": "/amrit-community"
+    },
+    {
+      "name": "Docs",
       "url": "/how-it-works"
     },
     {
