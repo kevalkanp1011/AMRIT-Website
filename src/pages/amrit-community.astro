@@ -1,6 +1,6 @@
 ---
 import PageHeader from "@/components/PageHeader.astro";
-import FeaturedBlog from "@/components/blog/FeaturedBlog.astro";
+import Blogs from "@/components/Blogs.astro";
 import config from "@/config/config.json";
 import Base from "@/layouts/Base.astro";
 import Cta from "@/layouts/partials/Cta.astro";
@@ -37,7 +37,8 @@ const communityData = await getEntryBySlug("contributing", "index");
     <Community data={communityData}/>
   <section class="section">
     <div class="container">
-      <FeaturedBlog posts={featuredPost} />
+      <h2 class="h4 mb-4">Community Stories</h2>
+      <Blogs posts={featuredPost} />
     </div>
   </section>
   <Cta />

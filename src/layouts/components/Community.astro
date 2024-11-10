@@ -2,72 +2,77 @@
 const { data } = Astro.props;
 const { contribute,involvement } = data.data;
 import { Image } from "astro:assets";
-import FeatureCard from "@/layouts/function-components/FeatureCard";
+import { FaPenNib } from "react-icons/fa6";
+import { FaSwatchbook } from "react-icons/fa6";
+import { FaCode } from "react-icons/fa6";
+import { FaComments } from "react-icons/fa6";
+import { FaMagnifyingGlass } from "react-icons/fa6";
+import { FaPeopleGroup } from "react-icons/fa6";
+const icons = {
+  FaPenNib,
+  FaSwatchbook,
+  FaCode,
+  FaComments,
+  FaMagnifyingGlass,
+  FaPeopleGroup,
+}
 ---
 <section>
   <h2 class="text-center py-8 mt-8">How can you contribute and help community?</h2>
-<div class="container">
-  {
-    (
-      <div class="key-feature-grid mt-10 grid grid-cols-1 gap-7 sm:grid-cols-2 md:grid-cols-3">
-
-        {involvement.map((item: any, i: number) => (
-          item.list.map((content:any,index:number)=>(
-          <div>
-            <div class="feature-card rounded-xl h-[300px] shadow-md hover:shadow-lg transition-shadow duration-300 p-5 pb-8 text-center">
-                <h3 class="h4 text-xl lg:text-2xl p-3">{content.title}</h3>
-                <p>{content.description}</p>
-            </div>
-          </div>
-          ))
-        ))}
-      </div>
-    )
-  }
-</div>
-<h2 class="text-center py-8 mt-8">Why contribute?</h2>
-<div>
   <div class="container">
-    {console.log(involvement.list)}
-    {contribute.map((content: any,index:number)=>(
-      
+    {
+      (
+        <div class="key-feature-grid mt-10 grid grid-cols-1 gap-7 md:grid-cols-3">
+          {involvement.map((item: any) => (
+            item.list.map((content:any) => {
+              const Icon = icons[content.icon]
+              return (
+                <div class="flex flex-col rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 p-5 pb-8 text-center items-center justify-center">
+                  <Icon size={48} class="text-center"/>
+                  <h3 class="h4 text-xl lg:text-2xl p-3">{content.title}</h3>
+                  <p>{content.description}</p>
+                </div>
+              )
+            })
+          ))}
+        </div>
+      )
+    }
+  </div>
+  <h2 class="text-center py-8 mt-8">Why contribute?</h2>
+  <div class="container">
+    {contribute.map((content: any, index:number)=>(
       <div class="gx-5 row mt-16 items-center first:mt-12">
-            <div
-              class={`lg:col-7 ${
-                index % 2 === 0 ? "lg:order-1" : "lg:order-0"
-              }`}
-            >
-              <div class="relative">
-                <Image
-                  class="w-full object-contain"
-                  alt="service"
-                  width={473}
-                  height={286}
-                  src={content.image}
-                />
-              </div>
-            </div>
-            <div
-              class={`mt-6 lg:col-5 lg:mt-0 ${
-                index % 2 === 0 ? "lg:order-0" : "lg:order-1"
-              }`}
-            >
-              <div class="text-container">
-                <h2 class="lg:text-4xl">{content.title}</h2>
-
-                <ul class="mt-6 text-dark lg:-ml-4">
-                  
-                    <li class="mb-2 flex items-center rounded px-4">
-                      {content.description}
-                      
-                    </li>
-                  
-                </ul>
-              </div>
-            </div>
+        <div
+          class={`lg:col-7 ${
+            index % 2 === 0 ? "lg:order-1" : "lg:order-0"
+          }`}
+        >
+          <div class="relative">
+            <Image
+              class="w-full object-contain rounded-2xl"
+              alt="service"
+              width={473}
+              height={286}
+              src={content.image}
+            />
           </div>
+        </div>
+        <div
+          class={`mt-6 lg:col-5 lg:mt-0 ${
+            index % 2 === 0 ? "lg:order-0" : "lg:order-1"
+          }`}
+        >
+          <div class="text-container">
+            <h2 class="lg:text-4xl">{content.title}</h2>
+            <ul class="mt-6 text-dark lg:-ml-4">
+              <li class="mb-2 flex items-center rounded px-4">
+                {content.description}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     ))}
   </div>
-</div>
-
 </section>
