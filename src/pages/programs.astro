@@ -1,0 +1,77 @@
+---
+import PageHeader from "@/components/PageHeader.astro";
+import Base from "@/layouts/Base.astro";
+import Faq from "@/layouts/function-components/Faq.jsx";
+import { getEntryBySlug } from "astro:content";
+import MapSvg from "@/components/programs/map-svg.astro";
+const pricing = await getEntryBySlug("pricing", "index");
+const program = await getEntryBySlug("programs", "index");
+const page_data = {
+  ...program.data,
+  content: program.body,
+};
+---
+
+<Base
+  title={program.data.title}
+  meta_title={pricing.data.meta_title}
+  description={pricing.data.description}
+  image={pricing.data.image}
+>
+  <section class="page-hero pb-14 pt-16">
+    <div class="container">
+      <PageHeader page_data={page_data} />
+      <p class="text-center">{program.data.subtitle}</p>
+    </div>
+    <div class="key-feature-grid mt-10 grid grid-cols-1 m-5 gap-7 lg:grid-cols-2 place-items-center">
+      {program.data.challenges.list.map((content: any) => {
+        return (
+          <div class="flex flex-col bg-white min-h-[250px] rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 p-5 pb-8 text-center items-center justify-center w-full max-w-lg">
+            <h3 class="h4 text-xl lg:text-2xl p-3">{content.title}</h3>
+            <p>{content.subtitle}</p>
+          </div>
+        );
+      })}
+    </div>
+    
+
+  </section>
+  
+  <Faq client:load data={program.data} />
+
+  <div id="details-box" class="hidden"></div>
+  <div class="h-screen flex justify-center items-center">
+  <MapSvg />
+  </div>
+  <script>
+    var tooltipSpan = document.getElementById("details-box");
+
+    document.addEventListener("mouseover", function (e) {
+      const target = e.target as HTMLElement | null;
+      if (target && target.tagName === "path") {
+        const content = (target.dataset as DOMStringMap).name;
+        const detailsBox = document.getElementById("details-box");
+        if (detailsBox) {
+          detailsBox.innerHTML = content || "";
+          detailsBox.style.opacity = "100%";
+        }
+      } else {
+        const detailsBox = document.getElementById("details-box");
+        if (detailsBox) {
+          detailsBox.style.opacity = "0%";
+        }
+      }
+    });
+
+    window.onmousemove = function (e) {
+      var x = e.clientX,
+        y = e.clientY;
+      if (tooltipSpan) {
+        tooltipSpan.style.display = "block";
+        tooltipSpan.style.top = y + 20 + "px";
+        tooltipSpan.style.left = x + "px";
+      }
+    };
+  </script>
+
+</Base>
