@@ -13,6 +13,19 @@ import cloudflare from "@astrojs/cloudflare";
 // https://astro.build/config
 export default defineConfig({
   output:"hybrid",
+  vite: {
+    ssr: {
+      noExternal: ['astro-font'], 
+    },
+    resolve: {
+      alias: {
+        'node:buffer': 'buffer',  
+        'node:path': 'path-browserify', 
+        'node:fs': 'browserfs',
+        'node:os': 'os-browserify',
+      },
+    },
+  },
   site: config.site.base_url ? config.site.base_url : "http://examplesite.com",
   base: config.site.base_path ? config.site.base_path : "/",
   trailingSlash: config.site.trailing_slash ? "always" : "never",
