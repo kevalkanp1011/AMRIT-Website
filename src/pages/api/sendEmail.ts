@@ -7,10 +7,10 @@ const resend = new Resend(import.meta.env.RESEND_API_KEY);
 
 export const POST: APIRoute = async ({ request }) => {
   const data = await request.formData();
-  
+
   const name = data.get("name");
   const email = data.get("email");
-  const message = data.get("message"); 
+  const message = data.get("message");
   if (!name || !email || !message) {
     return new Response(
       JSON.stringify({
@@ -32,7 +32,7 @@ export const POST: APIRoute = async ({ request }) => {
     Email: ${email}
     Message: ${message}
     </p>`,
-  }); 
+  });
 
   if (sendResend.data) {
     return new Response(
@@ -43,7 +43,7 @@ export const POST: APIRoute = async ({ request }) => {
         status: 200,
         statusText: "OK",
       },
-    ); 
+    );
   } else {
     console.log(sendResend.error)
     return new Response(

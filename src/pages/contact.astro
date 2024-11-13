@@ -10,12 +10,12 @@ const page_data = {
   content: contact.body,
 };
 let message = "";
-let messageType = ""; 
+let messageType = "";
 if (Astro.request.method === "POST") {
   try {
     const formData = await Astro.request.formData();
-    
-    const response = await fetch("https://amrit.pages.dev/api/sendEmail", {
+    const url = new URL(Astro.request.url).href;
+    const response = await fetch(url.replace('/contact', '/api/sendEmail'), {
       method: "POST",
       body: formData,
     });
@@ -23,10 +23,10 @@ if (Astro.request.method === "POST") {
     const data = await response.json();
 
     if (response.status === 200) {
-      message = data.message; 
+      message = data.message;
       messageType = "success"; // Success
     } else {
-      message = data.message || "Something went wrong. Please try again."; 
+      message = data.message || "Something went wrong. Please try again.";
       messageType = "error"; // Failure
     }
   } catch (error) {
@@ -106,7 +106,7 @@ if (Astro.request.method === "POST") {
               id="submitButton"
             >
               <span class="btn-text">Send Message</span>
-              <span class="loader hidden"></span> 
+              <span class="loader hidden"></span>
             </button>
           </form>
         </div>
