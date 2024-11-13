@@ -1,0 +1,66 @@
+---
+import { Image } from "astro:assets";
+import PageHeader from "@/components/PageHeader.astro";
+import Shape from "@/components/Shape.astro";
+import Base from "@/layouts/Base.astro";
+import { getSinglePage } from "@/lib/contentParser.astro";
+import { humanize, markdownify } from "@/lib/utils/textConverter";
+
+export async function getStaticPaths() {
+  const products = await getSinglePage("products");
+  const paths = products.map((product: any) => ({
+    params: {
+      single: product.slug,
+    },
+    props: { product },
+  }));
+  console.log(paths)
+  return paths;
+}
+const { product } = Astro.props;
+
+const { Content } = await product.render();
+const page_data = {
+  ...product.data,
+  index_title: product.data.title,
+  slug: product.slug,
+};
+---
+
+<Base
+  title={product.data.title}
+  meta_title={product.data.meta_title}
+  description={product.data.description}
+  image={product.data.image}
+>
+  <Shape />
+  <section class="page-hero pb-8 pt-16">
+    <div class="container">
+      <div class="page-hero-content mx-auto max-w-[883px] text-center">
+        <PageHeader page_data={page_data} />
+      </div>
+    </div>
+  </section>
+  <section class="section career-single pt-0">
+    <div class="container">
+      <div class="lg:gx-4 row">
+        <div class="mx-auto lg:col-8">
+          <div class="lg:py-[60px] rounded-xl bg-white p-7 shadow-lg lg:px-12">
+            <div class="mb-8 px-4 text-center">
+              <Image
+                class="mx-auto"
+                src={product.data.image}
+                alt=""
+                height={80}
+                width={80}
+              />
+              <h1 class="mt-6">{product.data.title}</h1>
+
+            </div>
+            <div class="content"><Content /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>
