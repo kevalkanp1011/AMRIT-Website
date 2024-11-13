@@ -1,12 +1,11 @@
 ---
 title: Success Story – SARATHI 104 Helpline Empowered by AMRIT EHR:Transforming Access to Healthcare in Assam
-subtitle: Mauris blandit aliquet elit, eget tincidunt nibh dolor sit amet,
-image: "/images/posts/post-5.png"
-author: Abdullah Al Shifat
-date: 2022-04-04T05:00:00Z
-categories: ["development", "design"]
-featured: false
-draft: false
+image: "/images/stories/Picture4.webp"
+img: [
+    "/images/stories/Picture5.webp",
+    "/images/stories/Picture6.webp"
+]
+
 ---
 
 Assam, India's 15th most populous state, faces unique healthcare challenges, including a scarcity of community health centers, specialists, and the lengthy distances to reach the nearest facilities. Rugged terrain and hilly landscapes further complicate access to essential healthcare, leaving many rural populations underserved. Recognizing these needs, the SARATHI 104 Helpline was launched by Piramal Foundation in collaboration with the National Health Mission (NHM) and the Government of Assam. This toll-free, round-the-clock helpline is designed to offer immediate medical advice, health counseling, and essential health information in multiple languages, addressing an urgent need for accessible healthcare in Assam’s rural and semi-urban areas.

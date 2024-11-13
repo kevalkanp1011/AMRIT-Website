@@ -1,6 +1,9 @@
 ---
 title: Enhancing Rural Healthcare Access through Telemedicine:The Impact of the Telemedicine Centre Initiative in India"
-image: "/images/posts/post-5.png"
+image: "/images/stories/Picture3.webp"
+img: [
+    "/images/stories/Picture2.webp"
+]
 
 ---
 

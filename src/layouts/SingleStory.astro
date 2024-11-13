@@ -18,18 +18,37 @@ const { Content } = await post.render();
           height={450}
         />
       </div>
+      
       <div class="mt-10 max-w-[810px] lg:col-9">
         <h1 class="h2">
           {post.data.title}
         </h1>
-        <div class="mb-5 mt-6 flex items-center space-x-2">
-          <ul class="mb-4">
-           
-          </ul>
-        </div>
 
         <div class="content">
+          {post.data.img[0] && 
+          <div>
+            <Image
+            class={"w-full object-contain rounded-2xl"}
+            src={post.data.img[0]}
+            alt=""
+            width={720}
+            height={450}
+            />
+          </div>
+          }
           <Content />
+          {post.data.img[1] &&
+          <div>
+            <Image
+            class={"w-full object-contain rounded-2xl"}
+            src={post.data.img[1]}
+            alt=""
+            width={720}
+            height={450}
+            />
+          </div>
+          }
+          
         </div>
         {post.data.link && 
           <Button href={post.data.link} style={'primary'} children={'Learn more'} rel={'noopener noreferrer'} client:load/>
