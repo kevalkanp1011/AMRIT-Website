@@ -1,9 +1,8 @@
 import { marked } from "marked";
 import { useState } from "react";
 
-const Faq = ({ data }) => {
-  const [isActive, setIsActive] = useState(new Set(data.approach.list.map((_, i) => i)));
-
+const ProductFeatures = ({ features }) => {
+  const [isActive, setIsActive] = useState(new Set(features.map((_, i) => i)));
   const accordionHandler = (index) => {
     setIsActive((prev) => {
       const newActive = new Set(prev);
@@ -21,15 +20,14 @@ const Faq = ({ data }) => {
       <div className="container max-w-[1230px]">
         <div className="row">
           <div className="text-center lg:col-4 lg:text-start">
-            <h2>{data.approach.title}</h2>
-            <p className="mt-6 lg:max-w-[404px]">{data.approach.subtitle}</p>
+            <h2>Key features</h2>
           </div>
           <div className="mt-8 lg:col-8 lg:mt-0">
             <div className="rounded-xl bg-white px-5 py-5 shadow-lg lg:px-10 lg:py-8">
-              {data.approach.list.map((item, i) => (
+              {features.map((item, i) => (
                 <div
                   className={`accordion border-b border-border ${
-                    isActive.has(i) ? "active" : undefined
+                    isActive.has(i) ? "active" : ""
                   }`}
                   onClick={() => accordionHandler(i)}
                   onKeyDown={() => accordionHandler(i)}
@@ -53,7 +51,7 @@ const Faq = ({ data }) => {
                   <div className="accordion-content pl-6">
                     <p
                       dangerouslySetInnerHTML={{
-                        __html: marked.parseInline(item.subtitle),
+                        __html: marked.parseInline(item.content),
                       }}
                     />
                   </div>
@@ -67,4 +65,4 @@ const Faq = ({ data }) => {
   );
 };
 
-export default Faq;
+export default ProductFeatures;
