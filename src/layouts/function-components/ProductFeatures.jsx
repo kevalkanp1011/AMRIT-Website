@@ -1,7 +1,7 @@
 import { marked } from "marked";
 import { useState } from "react";
 
-const Faq = ({ features }) => {
+const ProductFeatures = ({ features }) => {
   const [isActive, setIsActive] = useState(new Set(features.map((_, i) => i)));
   const accordionHandler = (index) => {
     setIsActive((prev) => {
@@ -65,4 +65,4 @@ const Faq = ({ features }) => {
   );
 };
 
-export default Faq;
+export default ProductFeatures;
