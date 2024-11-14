@@ -2,14 +2,18 @@ import { marked } from "marked";
 import { useState } from "react";
 
 const Faq = ({ data }) => {
-  const [isActive, setIsActive] = useState(data.approach.list.map((_, i) => i));
+  const [isActive, setIsActive] = useState(new Set(data.approach.list.map((_, i) => i)));
 
   const accordionHandler = (index) => {
-    if (isActive.includes(index)) {
-      setIsActive(isActive.filter((item) => item !== index));
-    } else {
-      setIsActive((prev) => [...prev, index]);
-    }
+    setIsActive((prev) => {
+      const newActive = new Set(prev);
+      if (newActive.has(index)) {
+        newActive.delete(index);
+      } else {
+        newActive.add(index);
+      }
+      return newActive;
+    });
   };
 
   return (
@@ -25,9 +29,10 @@ const Faq = ({ data }) => {
               {data.approach.list.map((item, i) => (
                 <div
                   className={`accordion border-b border-border ${
-                    isActive.includes(i) ? "active" : undefined
+                    isActive.has(i) ? "active" : undefined
                   }`}
                   onClick={() => accordionHandler(i)}
+                  onKeyDown={() => accordionHandler(i)}
                   key={`item-${i}`}
                 >
                   <div className="accordion-header relative pl-6 text-lg font-semibold text-dark">
