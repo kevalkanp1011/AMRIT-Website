@@ -30,6 +30,7 @@ const Faq = ({ features }) => {
                     isActive.has(i) ? "active" : ""
                   }`}
                   onClick={() => accordionHandler(i)}
+                  onKeyDown={() => accordionHandler(i)}
                   key={`item-${i}`}
                 >
                   <div className="accordion-header relative pl-6 text-lg font-semibold text-dark">
