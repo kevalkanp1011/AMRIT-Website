@@ -5,7 +5,8 @@ import Shape from "@/components/Shape.astro";
 import Base from "@/layouts/Base.astro";
 import Cta from "@/layouts/partials/Cta.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
-import Modules from "@/layouts/function-components/ProductModules";
+import ProductModules from "@/layouts/function-components/ProductModules";
+import ProductFeatures from "@/layouts/function-components/ProductFeatures";
 
 export async function getStaticPaths() {
   const products = await getSinglePage("products");
@@ -65,6 +66,54 @@ const page_data = {
       </div>
     </div>
   </section>
-  <Modules modules={modules} client:load />
+  <ProductModules modules={modules} client:load />
+
+  <ProductFeatures features={features} />
+
+  <section class="links section">
+    <div class="container max-w-[1230px]">
+      <div class="row">
+        <div class="text-center lg:col-4 lg:text-start">
+          <h3>Pilots & Partnerships</h3>
+        </div>
+      </div>
+      <div class="row mt-4">
+        {
+          partnerships.map(partnership => {
+            return (
+              <div class="mb-8 md:col-4">
+                <div class="rounded-xl bg-white p-2 shadow-lg lg:p-5">
+                  {partnership}
+                </div>
+              </div>
+            )})
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="links section">
+    <div class="container max-w-[1230px]">
+      <div class="row">
+        <div class="text-center lg:col-4 lg:text-start">
+          <h3>Links</h3>
+          <ol>
+            {
+              links.map(link => {
+                return (
+                  <li>
+                    <a class="mt-4 inline-flex items-center font-semibold text-primary" href={link.link} target="_blank">
+                      {link.title} <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="ml-1.5 text-xl font-bold" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 0 0 0-48.4z"></path></svg>
+                    </a>
+                  </li>
+                )
+              })
+            }
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <Cta />
 </Base>

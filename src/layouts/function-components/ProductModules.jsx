@@ -1,12 +1,15 @@
-import * as Icon from "react-feather";
-import { humanize } from "@/lib/utils/textConverter";
+import * as Icon from "react-icons/fa6";
+
 const ProductModules = ({ modules }) => {
   return (
     <section className="section">
       <div className="container">
+        <div className="row text-center">
+          <h2>Modules</h2>
+        </div>
         <div className="row mt-14 text-center">
           {modules.map((item, i) => {
-            const FeatherIcon = Icon[humanize(item.icon)];
+            const ReactIcon = Icon[item.icon];
 
             return (
               <div className="mb-10 sm:col-6 lg:col-4 " key={i}>
@@ -26,7 +29,7 @@ const ProductModules = ({ modules }) => {
                     />
                   </svg>
                   <span className="benifit-icon absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[28%]">
-                    <FeatherIcon color={item.color} size={48} />
+                    <ReactIcon color={item.color} size={48} />
                   </span>
                 </div>
                 <h3 className="h4 mb-4 mt-8">{item.title}</h3>
