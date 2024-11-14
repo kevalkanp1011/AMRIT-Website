@@ -14,8 +14,8 @@
   "settings": {
     "pagination": 6,
     "summary_length": 200,
-    "products_folder": "products",
-    "blog_folder": "blog"
+    "blog_folder": "blog",
+    "success_stories":"stories"
   },
 
   "call_to_action": {
