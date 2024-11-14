@@ -14,14 +14,14 @@ let messageType = "";
 if (Astro.request.method === "POST") {
   try {
     const formData = await Astro.request.formData();
-    const url = new URL(Astro.request.url).href;
-    const response = await fetch(url.replace('/contact', '/api/sendEmail'), {
+    const url = new URL(Astro.request.url).origin;
+    const response = await fetch(`${url}/api/sendEmail`, {
       method: "POST",
       body: formData,
     });
 
     const data = await response.json();
-
+    console.log(data)
     if (response.status === 200) {
       message = data.message;
       messageType = "success"; // Success

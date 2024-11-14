@@ -45,7 +45,6 @@ export const POST: APIRoute = async ({ request }) => {
       },
     );
   } else {
-    console.log(sendResend.error)
     return new Response(
       JSON.stringify({
         message: `Message failed to send: ${sendResend.error}`,
