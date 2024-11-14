@@ -15,15 +15,7 @@ export default defineConfig({
   output:"hybrid",
   vite: {
     ssr: {
-      noExternal: ['astro-font'], 
-    },
-    resolve: {
-      alias: {
-        'node:buffer': 'buffer',  
-        'node:path': 'path-browserify', 
-        'node:fs': 'browserfs',
-        'node:os': 'os-browserify',
-      },
+      external: ["buffer", "path", "fs", "os", "crypto", "async_hooks"].map((i) => `node:${i}`),
     },
   },
   site: config.site.base_url ? config.site.base_url : "http://examplesite.com",
