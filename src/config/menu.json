@@ -23,30 +23,19 @@
       "children": [
         {
           "name": "Health and Wellness Centre",
-          "url": "/products/hwc"
+          "url": "/products/health-and-wellness-centre-apps"
         },
-
         {
           "name": "Mobile Medical Unit",
-          "url": "/products/mmu"
+          "url": "/products/mobile-medical-unit"
         },
-
         {
           "name": "Front Line Worker Mobile App",
-          "url": "/products/flw"
+          "url": "/products/front-line-worker-app"
         },
         {
-          "name": "104 Health Information Helpline",
-          "url": "/products/104-hihl"
-        },
-
-        {
-          "name": "1097 Health Information Helpline",
-          "url": "/products/1097-hihl"
-        },
-        {
-          "name": "Early Childhood Development",
-          "url": "/products/ecd"
+          "name": "Health Information Helplines",
+          "url": "/products/health-helplines"
         }
       ]
     },
@@ -66,8 +55,8 @@
       "url": "/about"
     },
     {
-      "name": "Products",
-      "url": "/blog"
+      "name": "Programs",
+      "url": "/programs"
     },
     {
       "name": "Contact",
