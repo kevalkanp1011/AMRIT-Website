@@ -1,0 +1,119 @@
+---
+import { Image } from "astro:assets";
+import PageHeader from "@/components/PageHeader.astro";
+import Shape from "@/components/Shape.astro";
+import Base from "@/layouts/Base.astro";
+import Cta from "@/layouts/partials/Cta.astro";
+import { getSinglePage } from "@/lib/contentParser.astro";
+import ProductModules from "@/layouts/function-components/ProductModules";
+import ProductFeatures from "@/layouts/function-components/ProductFeatures";
+
+export async function getStaticPaths() {
+  const products = await getSinglePage("products");
+  const paths = products.map((product: any) => ({
+    params: {
+      slug: product.slug,
+    },
+    props: { product },
+  }));
+  return paths;
+}
+const { product } = Astro.props;
+const { modules, features, partnerships, links, image } = product.data;
+
+const { Content } = await product.render();
+const page_data = {
+  ...product.data,
+  index_title: product.data.title,
+  slug: product.slug,
+};
+---
+
+<Base
+  title={product.data.title}
+  meta_title={product.data.page_title}
+  description={product.data.description}
+  image={product.data.image}
+>
+  <Shape />
+  <section class="page-hero pb-14 pt-16">
+    <div class="container">
+      <PageHeader page_data={page_data} />
+      <div class="col-12 mt-14">
+        <div class="relative">
+          <Image
+            src={image}
+            alt=""
+            height={532}
+            width={1044}
+            class="w-full rounded"
+          />
+          <Image
+            class="lg:h-[150px] lg:w-[150px] absolute -left-[8%] bottom-[12%] z-[-1] h-20 w-20 -rotate-90 lg:-left-8 lg:bottom-4"
+            src="/images/shape.png"
+            height={130}
+            width={130}
+            alt=""
+          />
+          <Image
+            class="absolute -bottom-4 -right-4 z-[-1] h-16 w-16 -rotate-90"
+            src="/images/shape.png"
+            alt=""
+            height={64}
+            width={64}
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+  <ProductModules modules={modules} client:load />
+
+  <ProductFeatures features={features} client:load />
+
+  <section class="links section">
+    <div class="container max-w-[1230px]">
+      <div class="row">
+        <div class="text-center lg:col-4 lg:text-start">
+          <h3>Pilots & Partnerships</h3>
+        </div>
+      </div>
+      <div class="row mt-4">
+        {
+          partnerships.map(partnership => {
+            return (
+              <div class="mb-8 md:col-4">
+                <div class="rounded-xl bg-white p-2 shadow-lg lg:p-5">
+                  {partnership}
+                </div>
+              </div>
+            )})
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="links section">
+    <div class="container max-w-[1230px]">
+      <div class="row">
+        <div class="text-center lg:col-4 lg:text-start">
+          <h3>Links</h3>
+          <ol>
+            {
+              links.map(link => {
+                return (
+                  <li>
+                    <a class="mt-4 inline-flex items-center font-semibold text-primary" href={link.link} rel="noopener noreferrer" target="_blank">
+                      {link.title} <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="ml-1.5 text-xl font-bold" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 0 0 0-48.4z"></path></svg>
+                    </a>
+                  </li>
+                )
+              })
+            }
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Cta />
+</Base>

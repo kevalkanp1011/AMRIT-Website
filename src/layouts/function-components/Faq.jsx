@@ -2,13 +2,18 @@ import { marked } from "marked";
 import { useState } from "react";
 
 const Faq = ({ data }) => {
-  const [isActive, setIsActive] = useState([]);
+  const [isActive, setIsActive] = useState(new Set(data.approach.list.map((_, i) => i)));
+
   const accordionHandler = (index) => {
-    if (isActive.includes(index)) {
-      setIsActive(isActive.filter((item) => item !== index));
-    } else {
-      setIsActive((prev) => [...prev, index]);
-    }
+    setIsActive((prev) => {
+      const newActive = new Set(prev);
+      if (newActive.has(index)) {
+        newActive.delete(index);
+      } else {
+        newActive.add(index);
+      }
+      return newActive;
+    });
   };
 
   return (
@@ -16,23 +21,21 @@ const Faq = ({ data }) => {
       <div className="container max-w-[1230px]">
         <div className="row">
           <div className="text-center lg:col-4 lg:text-start">
-            <h2>{data.faq.title}</h2>
-            <p className="mt-6 lg:max-w-[404px]">{data.faq.description}</p>
+            <h2>{data.approach.title}</h2>
+            <p className="mt-6 lg:max-w-[404px]">{data.approach.subtitle}</p>
           </div>
           <div className="mt-8 lg:col-8 lg:mt-0">
             <div className="rounded-xl bg-white px-5 py-5 shadow-lg lg:px-10 lg:py-8">
-              {data.faq.faq_list.map((item, i) => (
+              {data.approach.list.map((item, i) => (
                 <div
                   className={`accordion border-b border-border ${
-                    isActive.includes(i) ? "active" : undefined
+                    isActive.has(i) ? "active" : undefined
                   }`}
                   onClick={() => accordionHandler(i)}
+                  onKeyDown={() => accordionHandler(i)}
                   key={`item-${i}`}
                 >
-                  <div
-                    className="accordion-header relative pl-6 text-lg font-semibold text-dark"
-                    
-                  >
+                  <div className="accordion-header relative pl-6 text-lg font-semibold text-dark">
                     {item.title}
                     <svg
                       className="accordion-icon absolute left-0 top-[22px]"
@@ -50,7 +53,7 @@ const Faq = ({ data }) => {
                   <div className="accordion-content pl-6">
                     <p
                       dangerouslySetInnerHTML={{
-                        __html: marked.parseInline(item.content),
+                        __html: marked.parseInline(item.subtitle),
                       }}
                     />
                   </div>

@@ -9,8 +9,8 @@
       "url": "/about"
     },
     {
-      "name": "Documentation",
-      "url": "/how-it-works"
+      "name": "Community",
+      "url": "/amrit-community"
     },
     {
       "name":"Programs",
@@ -22,37 +22,26 @@
       "hasChildren": true,
       "children": [
         {
-          "name": "HWC (web and mobile flavours)",
-          "url": "/career"
-        },
-
-        {
-          "name": "MMU",
-          "url": "/integrations"
-        },
-
-        {
-          "name": "FLW Mobile app",
-          "url": "/pricing"
+          "name": "Health and Wellness Centre",
+          "url": "/products/health-and-wellness-centre-apps"
         },
         {
-          "name": "104 HIHL",
-          "url": "/signin"
-        },
-
-        {
-          "name": "1097 HIHL",
-          "url": "/elements"
+          "name": "Mobile Medical Unit",
+          "url": "/products/mobile-medical-unit"
         },
         {
-          "name": "ECD",
-          "url": "/changelog"
+          "name": "Front Line Worker Mobile App",
+          "url": "/products/front-line-worker-app"
+        },
+        {
+          "name": "Health Information Helplines",
+          "url": "/products/health-helplines"
         }
       ]
     },
     {
-      "name": "Partnership",
-      "url": "/blog"
+      "name": "Partnerships",
+      "url": "/partnerships"
     },
     {
       "name": "Contact",
@@ -66,16 +55,16 @@
       "url": "/about"
     },
     {
-      "name": "Documentation",
-      "url": "/how-it-works"
-    },
-    {
-      "name": "Products",
-      "url": "/blog"
+      "name": "Programs",
+      "url": "/programs"
     },
     {
       "name": "Contact",
       "url": "/contact"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/PSMRI/AMRIT"
     }
   ]
 }
