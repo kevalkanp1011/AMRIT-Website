@@ -32,10 +32,10 @@ counter:
       number: 160
       measurement: M
       color: "#FEC163"
-    
+
 # Gallery
 gallery:
-  title: Driving Innovation and Collaboration for Impactful Healthcare Solutions 
+  title: Driving Innovation and Collaboration for Impactful Healthcare Solutions
   images:
     - "/images/Gallery/g1.webp"
     - "/images/Gallery/g2.webp"
@@ -49,11 +49,11 @@ features:
     - title: Innovation with Purpose
       subtitle: Solving real healthcare challenges through technology
       content: Our focus is on purpose-driven innovation that addresses critical public health challenges. We develop technology that enhances care delivery, improves patient outcomes, and supports healthcare workers, making a tangible difference in the healthcare landscape.
-    - title:  Open-source Solutions for Equity and Accessibility
+    - title: Open-source Solutions for Equity and Accessibility
       subtitle: Affordable, inclusive, and accessible solutions for all
-      content: We believe digital health should be available to everyone, regardless of socio-economic status or geographic location. Our commitment to open-source development ensures that our solutions are affordable and equitable, helping to close the digital divide for underserved populations. 
+      content: We believe digital health should be available to everyone, regardless of socio-economic status or geographic location. Our commitment to open-source development ensures that our solutions are affordable and equitable, helping to close the digital divide for underserved populations.
     - title: Achieving Operational Excellence
-      subtitle: Driving efficiency and scalability in healthcare solutions 
+      subtitle: Driving efficiency and scalability in healthcare solutions
       content: By closely collaborating with operational teams and healthcare professionals, we align our digital solutions with real-world healthcare needs. This integration streamlines processes, reduces inefficiencies, and ensures that our innovations are both sustainable and scalable within public health systems.
     - title: User-Centered Design and Feedback Integration
       subtitle: Designing with users at the core
@@ -63,8 +63,7 @@ features:
       content: In the dynamic field of digital health, we view mistakes as opportunities for learning. By fostering a culture of continuous improvement, we refine our processes, making our solutions more resilient, effective, and better aligned with the needs of our users.
     - title: Ecosystem Collaboration
       subtitle: Strengthening partnerships to drive impact
-      content: Collaboration with a wide range of government, technical and knowledge partners enable us to enhance integration and interoperability. Through these partnerships, we amplify the impact of our solutions across public health systems. 
-    
+      content: Collaboration with a wide range of government, technical and knowledge partners enable us to enhance integration and interoperability. Through these partnerships, we amplify the impact of our solutions across public health systems.
 
 ## members
 members:
@@ -91,7 +90,7 @@ members:
     - name: Helen Karyamsetty Grace
       title: Developer
       field: "Helen has been working as a Java full-stack developer at Wipro for the past three years, having embarked on her journey with AMRIT, an organization that envisions healthcare in the digital world on a larger scale and strives to turn this vision into reality. She has a passion for exploring diverse and innovative ideas, continually striving to bring them to fruition. Outside of work, travel, crafting, and prayer bring her peace and fulfillment."
-      image: "/images/Team/helen.webp"  
+      image: "/images/Team/helen.webp"
     - name: Intekhab Alam
       title: Chief Manager
       field: Intekhab Alam leads initiatives at the intersection of digital innovation and public health. With a strong commitment to leveraging technology for the betterment of communities, he aspires to stand as a beacon of excellence in the realm of Digital Public Health. What sets him apart is his unwavering dedication and passion for fostering a culture of public service through Sewa Bhav. He thrives on building meaningful connections with individuals who share his passion for making a positive impact on society.
@@ -160,7 +159,7 @@ members:
     - name: Srishti Gupta
       title: Developer
       field: Srishti is a passionate developer, who loves to take new challenges and is making difference in the digital healthcare solution  at AMRIT. She enjoys being the part of AMRIT as it is an amalgamation of technology, healthcare and serving a great purpose in the public healthcare sector. Since she resonates with the long term vision of AMRIT, she is grateful for contributing her technical skill to a meaningful change in people's lives. When she is not coding, you can find her enjoying music, watching movies or exploring destinations, always eager to learn from the world around her.
-      image: "/images/Team/srishti.webp"  
+      image: "/images/Team/srishti.webp"
     - name: Srinivas Tirunahari
       title: System Administrator
       field: Srinivas's professional journey began with a strong foundation in system administration, where he developed his skills in managing infrastructure and ensuring seamless operations. Over the years, his passion for cloud computing and DevOps has grown, driving him to explore innovative ways to improve processes. Joining the AMRIT team has been particularly rewarding for him. He appreciates the team’s commitment to making a positive impact in the healthcare sector and is excited to collaborate with talented individuals who share a common goal of improving patient care through technology. In his free time, he enjoys exploring nature, which helps him recharge and stay inspired.
@@ -178,5 +177,32 @@ members:
       title: Project Manager
       field: Virendra Kumar is an accomplished IT professional with over 15 years of experience. He has expertise in designing and managing systems that improve medical access and optimize health services. His work includes developing health information systems, mobile health application services and telemedicine platforms. Known for his leadership, problem-solving skills and technical proficiency, he collaborates with teams and organizations to create scalable and secure digital health solutions. His passion lies in using technology to enhance public health outcomes through innovation and digital transformation.
       image: "/images/Team/virendra.webp"
+
+roadmap:
+  title: RoadMap
+  description: Our team consists of experts at the intersection of digital health, public health, technology, and leadership, dedicated to developing innovative and scalable health solutions that align with both national and global health objectives.
+  events:
+    - tag: The origin
+      date: May, 2020
+      title: Acme was founded in Milan, Italy
+      description: Pretium lectus quam id leo. Urna et pharetra pharetra massa massa. Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.Pretium lectus quam id leo. Urna et pharetra pharetra massa massa. Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.Pretium lectus quam id leo. Urna et pharetra pharetra massa massa. Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.
+      image: /images/Gallery/pt3.jpeg
+    - tag: The origin
+      date: May, 2020
+      title: Acme was founded in Milan, Italy
+      description: Pretium lectus quam id leo. Urna et pharetra pharetra massa massa. Adipiscing enim eu neque aliquam vestibulum     morbi blandit cursus risus.
+    - tag: The origin
+      date: May, 2020
+      title: Acme was founded in Milan, Italy
+      description: Pretium lectus quam id leo. Urna et pharetra pharetra massa massa. Adipiscing enim eu neque aliquam vestibulum     morbi blandit cursus risus.
+    - tag: The origin
+      date: May, 2020
+      title: Acme was founded in Milan, Italy
+      description: Pretium lectus quam id leo. Urna et pharetra pharetra massa massa. Adipiscing enim eu neque aliquam vestibulum     morbi blandit cursus risus.
+    - tag: The origin
+      date: May, 2020
+      title: Acme was founded in Milan, Italy
+      description: Pretium lectus quam id leo. Urna et pharetra pharetra massa massa. Adipiscing enim eu neque aliquam vestibulum     morbi blandit cursus risus.
 ---
+
 Accessible Medical Records via Integrated Technologies (AMRIT), developed by Piramal Swasthya, is a health tech platform integrated with ABDM. Supporting ABHA creation, verification, and secure, consent-based access to electronic medical records, ensuring a unified health data presence nationwide through unique beneficiary IDs.
