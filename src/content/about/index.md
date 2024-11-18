@@ -179,30 +179,42 @@ members:
       image: "/images/Team/virendra.webp"
 
 roadmap:
-  title: RoadMap
-  description: Our team consists of experts at the intersection of digital health, public health, technology, and leadership, dedicated to developing innovative and scalable health solutions that align with both national and global health objectives.
+  title: Our Journey - Transforming Healthcare for All
+  description: A comprehensive timeline of our organization's evolution in revolutionizing healthcare through digital innovation and community engagement.
   events:
-    - tag: The origin
-      date: May, 2020
-      title: Acme was founded in Milan, Italy
-      description: Pretium lectus quam id leo. Urna et pharetra pharetra massa massa. Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.Pretium lectus quam id leo. Urna et pharetra pharetra massa massa. Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.Pretium lectus quam id leo. Urna et pharetra pharetra massa massa. Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.
-      image: /images/Gallery/pt3.jpeg
-    - tag: The origin
-      date: May, 2020
-      title: Acme was founded in Milan, Italy
-      description: Pretium lectus quam id leo. Urna et pharetra pharetra massa massa. Adipiscing enim eu neque aliquam vestibulum     morbi blandit cursus risus.
-    - tag: The origin
-      date: May, 2020
-      title: Acme was founded in Milan, Italy
-      description: Pretium lectus quam id leo. Urna et pharetra pharetra massa massa. Adipiscing enim eu neque aliquam vestibulum     morbi blandit cursus risus.
-    - tag: The origin
-      date: May, 2020
-      title: Acme was founded in Milan, Italy
-      description: Pretium lectus quam id leo. Urna et pharetra pharetra massa massa. Adipiscing enim eu neque aliquam vestibulum     morbi blandit cursus risus.
-    - tag: The origin
-      date: May, 2020
-      title: Acme was founded in Milan, Italy
-      description: Pretium lectus quam id leo. Urna et pharetra pharetra massa massa. Adipiscing enim eu neque aliquam vestibulum     morbi blandit cursus risus.
+    - tag: Foundation
+      date: 2017
+      title: A Vision Realized
+      description: In 2017, we took our first major step toward revolutionizing healthcare with the development of AMRIT (Accessible Medical Records for Individuals and Teams). This Integrated Electronic Medical Record (iEMR) system was designed to break down barriers to access, ensuring that vital health information is at the fingertips of those who need it most.
+    - tag: Expansion
+      date: 2018
+      title: Expanding Our Reach
+      description: The following year marked a significant expansion as we launched the 104 Health Information and Health Linkage (HIHL) service across Assam, Himachal Pradesh, and Bihar. Alongside this, the Maternal and Child Tracking System (MCTS) was introduced in Himachal Pradesh, enhancing our ability to monitor and support maternal and child health. 
+    - tag: Innovation
+      date: 2019
+      title: Embracing Technology
+      description: In 2019, we embraced telemedicine with a pilot application in Himachal Pradesh, bridging the gap between healthcare providers and patients in remote areas. This year also saw the piloting of the AMRIT integrated system in Assam, reinforcing our commitment to accessible healthcare. 
+    - tag: Growth
+      date: 2020
+      title: Innovating for Impact
+      description: The momentum continued in 2020 as HIHL expanded into Jharkhand and Himachal Pradesh, reaching more communities. We also integrated Point of Care Testing (POCT) devices, such as Healthcube and Fetosense, enhancing diagnostic capabilities where they were needed most. 
+    - tag: Development
+      date: 2021
+      title: Empowering FLW's
+      description: In 2021, we piloted the FLW & HWC Application in Muzaffarpur, Bihar, equipping frontline health workers with the tools they need to deliver effective care and support their communities. 
+    - tag: Achievement
+      date: 2022
+      title: Commitment to Excellence
+      description: Our journey of excellence was further solidified in 2022 when we achieved compliance with the Ayushman Bharat Digital Mission (ABDM). This year also saw the launch of the Saksham Project in Assam and the initiation of the Niramay-1 pilot, focusing on frontline workers and health and wellness centers. 
+    - tag: Innovation
+      date: 2023
+      title: Tools for Transformation
+      description: In 2023, we empowered frontline workers with the Sakhi 2.0 App for ASHAs, enhancing their capabilities in the field. We launched the Health and Wellness Center (HWC) Mobile App for Primary Health Centers and introduced the Early Childhood Development (ECD) Application. To foster innovation, the AMRIT code was made available on public GitHub, inviting collaboration from developers around the world. 
+    - tag: Future
+      date: 2024
+      title: Building a Brighter Future
+      description: As we move into 2024, our focus shifts toward building a credible and scalable Digital Public Good (DPG). By strengthening multisector partnerships, we aim to create a resilient healthcare ecosystem that is equitable, accessible, and responsive to the needs of all communities. 
+
 ---
 
 Accessible Medical Records via Integrated Technologies (AMRIT), developed by Piramal Swasthya, is a health tech platform integrated with ABDM. Supporting ABHA creation, verification, and secure, consent-based access to electronic medical records, ensuring a unified health data presence nationwide through unique beneficiary IDs.
