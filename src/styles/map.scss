@@ -1,51 +1,8 @@
-
-
-path:hover {
-  fill: orange !important;
-}
-
 #ind-map {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 50px;
-  width: 100%;
-  height: 100%;
-}
-path:hover,
-circle:hover {
-  stroke: #002868 !important;
-  stroke-width: 2px;
-  stroke-linejoin: round;
-  fill: #002868 !important;
-  cursor: pointer;
-}
-#path67 {
-  fill: none !important;
-  stroke: #a9a9a9 !important;
-  cursor: default;
-}
-#details-box1 {
-  display: none;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 1;
-  background-color: #000000;
-  border: 2px solid #bf0a30;
-  border-radius: 5px;
-  padding: 5px;
-}
 
-#details-box {
-  padding: 1rem;
-  border-radius: 8px;
-  font-size: 14px;
-  position: fixed;
-  color: white;
-  background-color: #000000;
-  width: fit-content;
-  transform: translateX(-50%);
-  transition: opacity 0.4s ease;
-  z-index: 1;
+  path {
+    stroke: #fff;
+    fill: #dbdbdb;
+    transition: fill 0.4s ease;
+  }
 }
