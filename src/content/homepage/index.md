@@ -71,7 +71,7 @@ service:
 
   our_service:
     - title: Transforming Healthcare Through AMRIT’s Programs
-      desctiption: Discover how AMRIT’s initiatives have improved healthcare delivery and supported millions across India.
+      description: Discover how AMRIT’s initiatives have improved healthcare delivery and supported millions across India.
       image: "/images/landing.webp"
       list:
         - Reached 2+ crore beneficiaries in 16 states.

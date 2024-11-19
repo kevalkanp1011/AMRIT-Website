@@ -75,7 +75,7 @@ members:
       field: Avinash is a Sr.Application Support Engineer,He finds joy in learning new skills,working closely with development team and having 3+ experience in healthcare. Currently serving as a Sr.Application Support at Piramal Swasthya.
       image: "/images/Team/avinash.webp"
       link: "https://www.linkedin.com/in/avinash-sharma-962b151a1/"
-    - name: Balamurugan Karyaraj
+    - name: Balamurugan Kariyaraj
       title: Project Manager
       field: With a passion for building products that make an impact and brings a unique blend of Scrum Master expertise and Project Management skills to the table. Dedicated to breaking down complex problems into manageable pieces, he leads teams to deliver results incrementally, with a focus on continuous improvement.
       image: "/images/Team/bala.webp"
