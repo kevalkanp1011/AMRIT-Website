@@ -32,10 +32,10 @@ counter:
       number: 160
       measurement: M
       color: "#FEC163"
-    
+
 # Gallery
 gallery:
-  title: Driving Innovation and Collaboration for Impactful Healthcare Solutions 
+  title: Driving Innovation and Collaboration for Impactful Healthcare Solutions
   images:
     - "/images/Gallery/g1.webp"
     - "/images/Gallery/g2.webp"
@@ -49,11 +49,11 @@ features:
     - title: Innovation with Purpose
       subtitle: Solving real healthcare challenges through technology
       content: Our focus is on purpose-driven innovation that addresses critical public health challenges. We develop technology that enhances care delivery, improves patient outcomes, and supports healthcare workers, making a tangible difference in the healthcare landscape.
-    - title:  Open-source Solutions for Equity and Accessibility
+    - title: Open-source Solutions for Equity and Accessibility
       subtitle: Affordable, inclusive, and accessible solutions for all
-      content: We believe digital health should be available to everyone, regardless of socio-economic status or geographic location. Our commitment to open-source development ensures that our solutions are affordable and equitable, helping to close the digital divide for underserved populations. 
+      content: We believe digital health should be available to everyone, regardless of socio-economic status or geographic location. Our commitment to open-source development ensures that our solutions are affordable and equitable, helping to close the digital divide for underserved populations.
     - title: Achieving Operational Excellence
-      subtitle: Driving efficiency and scalability in healthcare solutions 
+      subtitle: Driving efficiency and scalability in healthcare solutions
       content: By closely collaborating with operational teams and healthcare professionals, we align our digital solutions with real-world healthcare needs. This integration streamlines processes, reduces inefficiencies, and ensures that our innovations are both sustainable and scalable within public health systems.
     - title: User-Centered Design and Feedback Integration
       subtitle: Designing with users at the core
@@ -63,8 +63,7 @@ features:
       content: In the dynamic field of digital health, we view mistakes as opportunities for learning. By fostering a culture of continuous improvement, we refine our processes, making our solutions more resilient, effective, and better aligned with the needs of our users.
     - title: Ecosystem Collaboration
       subtitle: Strengthening partnerships to drive impact
-      content: Collaboration with a wide range of government, technical and knowledge partners enable us to enhance integration and interoperability. Through these partnerships, we amplify the impact of our solutions across public health systems. 
-    
+      content: Collaboration with a wide range of government, technical and knowledge partners enable us to enhance integration and interoperability. Through these partnerships, we amplify the impact of our solutions across public health systems.
 
 ## members
 members:
@@ -91,7 +90,7 @@ members:
     - name: Helen Karyamsetty Grace
       title: Developer
       field: "Helen has been working as a Java full-stack developer at Wipro for the past three years, having embarked on her journey with AMRIT, an organization that envisions healthcare in the digital world on a larger scale and strives to turn this vision into reality. She has a passion for exploring diverse and innovative ideas, continually striving to bring them to fruition. Outside of work, travel, crafting, and prayer bring her peace and fulfillment."
-      image: "/images/Team/helen.webp"  
+      image: "/images/Team/helen.webp"
     - name: Intekhab Alam
       title: Chief Manager
       field: Intekhab Alam leads initiatives at the intersection of digital innovation and public health. With a strong commitment to leveraging technology for the betterment of communities, he aspires to stand as a beacon of excellence in the realm of Digital Public Health. What sets him apart is his unwavering dedication and passion for fostering a culture of public service through Sewa Bhav. He thrives on building meaningful connections with individuals who share his passion for making a positive impact on society.
@@ -160,7 +159,7 @@ members:
     - name: Srishti Gupta
       title: Developer
       field: Srishti is a passionate developer, who loves to take new challenges and is making difference in the digital healthcare solution  at AMRIT. She enjoys being the part of AMRIT as it is an amalgamation of technology, healthcare and serving a great purpose in the public healthcare sector. Since she resonates with the long term vision of AMRIT, she is grateful for contributing her technical skill to a meaningful change in people's lives. When she is not coding, you can find her enjoying music, watching movies or exploring destinations, always eager to learn from the world around her.
-      image: "/images/Team/srishti.webp"  
+      image: "/images/Team/srishti.webp"
     - name: Srinivas Tirunahari
       title: System Administrator
       field: Srinivas's professional journey began with a strong foundation in system administration, where he developed his skills in managing infrastructure and ensuring seamless operations. Over the years, his passion for cloud computing and DevOps has grown, driving him to explore innovative ways to improve processes. Joining the AMRIT team has been particularly rewarding for him. He appreciates the team’s commitment to making a positive impact in the healthcare sector and is excited to collaborate with talented individuals who share a common goal of improving patient care through technology. In his free time, he enjoys exploring nature, which helps him recharge and stay inspired.
@@ -178,5 +177,44 @@ members:
       title: Project Manager
       field: Virendra Kumar is an accomplished IT professional with over 15 years of experience. He has expertise in designing and managing systems that improve medical access and optimize health services. His work includes developing health information systems, mobile health application services and telemedicine platforms. Known for his leadership, problem-solving skills and technical proficiency, he collaborates with teams and organizations to create scalable and secure digital health solutions. His passion lies in using technology to enhance public health outcomes through innovation and digital transformation.
       image: "/images/Team/virendra.webp"
+
+roadmap:
+  title: Our Journey - Transforming Healthcare for All
+  description: A comprehensive timeline of our organization's evolution in revolutionizing healthcare through digital innovation and community engagement.
+  events:
+    - tag: Foundation
+      date: 2017
+      title: A Vision Realized
+      description: In 2017, we took our first major step toward revolutionizing healthcare with the development of AMRIT (Accessible Medical Records for Individuals and Teams). This Integrated Electronic Medical Record (iEMR) system was designed to break down barriers to access, ensuring that vital health information is at the fingertips of those who need it most.
+    - tag: Expansion
+      date: 2018
+      title: Expanding Our Reach
+      description: The following year marked a significant expansion as we launched the 104 Health Information and Health Linkage (HIHL) service across Assam, Himachal Pradesh, and Bihar. Alongside this, the Maternal and Child Tracking System (MCTS) was introduced in Himachal Pradesh, enhancing our ability to monitor and support maternal and child health. 
+    - tag: Innovation
+      date: 2019
+      title: Embracing Technology
+      description: In 2019, we embraced telemedicine with a pilot application in Himachal Pradesh, bridging the gap between healthcare providers and patients in remote areas. This year also saw the piloting of the AMRIT integrated system in Assam, reinforcing our commitment to accessible healthcare. 
+    - tag: Growth
+      date: 2020
+      title: Innovating for Impact
+      description: The momentum continued in 2020 as HIHL expanded into Jharkhand and Himachal Pradesh, reaching more communities. We also integrated Point of Care Testing (POCT) devices, such as Healthcube and Fetosense, enhancing diagnostic capabilities where they were needed most. 
+    - tag: Development
+      date: 2021
+      title: Empowering FLW's
+      description: In 2021, we piloted the FLW & HWC Application in Muzaffarpur, Bihar, equipping frontline health workers with the tools they need to deliver effective care and support their communities. 
+    - tag: Achievement
+      date: 2022
+      title: Commitment to Excellence
+      description: Our journey of excellence was further solidified in 2022 when we achieved compliance with the Ayushman Bharat Digital Mission (ABDM). This year also saw the launch of the Saksham Project in Assam and the initiation of the Niramay-1 pilot, focusing on frontline workers and health and wellness centers. 
+    - tag: Innovation
+      date: 2023
+      title: Tools for Transformation
+      description: In 2023, we empowered frontline workers with the Sakhi 2.0 App for ASHAs, enhancing their capabilities in the field. We launched the Health and Wellness Center (HWC) Mobile App for Primary Health Centers and introduced the Early Childhood Development (ECD) Application. To foster innovation, the AMRIT code was made available on public GitHub, inviting collaboration from developers around the world. 
+    - tag: Future
+      date: 2024
+      title: Building a Brighter Future
+      description: As we move into 2024, our focus shifts toward building a credible and scalable Digital Public Good (DPG). By strengthening multisector partnerships, we aim to create a resilient healthcare ecosystem that is equitable, accessible, and responsive to the needs of all communities. 
+
 ---
+
 Accessible Medical Records via Integrated Technologies (AMRIT), developed by Piramal Swasthya, is a health tech platform integrated with ABDM. Supporting ABHA creation, verification, and secure, consent-based access to electronic medical records, ensuring a unified health data presence nationwide through unique beneficiary IDs.
