@@ -44,15 +44,15 @@
   "params": {
     "footer_description": "AMRIT is an open-source platform designed to strengthen primary healthcare by empowering frontline health workers with the right digital tools for data-driven decision-making and seamless access to patients' Electronic Health Records (EHR) through ABDM-compliant, interoperable systems.",
     "email": "amrit@piramalswasthya.org",
-    "location": "3rd Floor,  No. 6-3-1112 AWFIS Oyster Complex, Greenlands Road Somajiguda, Begumpet Hyderabad – 500016, India.",
+    "location": "3rd Floor, No. 6-3-1112 AWFIS Oyster Complex, Greenlands Road Somajiguda, Begumpet Hyderabad – 500016, India.",
     "phone": "+91 (40) 49451999",
     "contact_form_action": "#",
     "copyright": "Copyright © 2024 AMRIT"
   },
 
   "metadata": {
-    "meta_author": "Themefisher",
+    "meta_author": "Piramal Swasthya",
     "meta_image": "/images/og-image.png",
-    "meta_description": "pinwheel astro"
+    "meta_description": "AMRIT is an open-source platform designed to strengthen primary healthcare by empowering frontline health workers with the right digital tools for data-driven decision-making and seamless access to patients' Electronic Health Records (EHR) through ABDM-compliant, interoperable systems."
   }
 }
