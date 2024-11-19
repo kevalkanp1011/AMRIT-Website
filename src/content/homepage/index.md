@@ -83,7 +83,9 @@ service:
         enable: true  
     - title: Our Vision and Journey
       description: Learn more about AMRIT’s mission, development principles, the dedicated team behind it, and our journey to transforming public health.
-      image:  "/images/landing2.webp"
+      video:
+        thumbnail: "/images/landing2.webp"
+        video_id: "2S6v9BluNx4"
       button:
         label: Read More About Us
         link: "/about"
