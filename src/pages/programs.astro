@@ -53,7 +53,7 @@ const page_data = {
 
   <Faq client:load data={program.data} />
 
-  <ProgramMap impact={program.data.impact} />
+  <ProgramMap client:load impact={program.data.impact} />
 
   <SuccessStories posts={posts} />
 </Base>
