@@ -15,7 +15,7 @@ const HomePageFeature = ({ feature_list }) => {
               <p className="">{item.content}</p>
             </div>
             <span className="icon mt-4">
-              <ReactIcon className="text-black" size={24}/>
+              <ReactIcon color="orange" size={24}/>
             </span>
           </div>
         );

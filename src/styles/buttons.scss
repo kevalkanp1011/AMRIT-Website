@@ -3,7 +3,7 @@
 }
 
 .btn-primary {
-  @apply cursor-pointer rounded-[50px] border-0 bg-gradient-to-tl text-center font-medium text-white hover:shadow-[0px_5px_30px_rgba(252,167,111,0.5)];
+  @apply cursor-pointer rounded-[50px] border-0 bg-gradient-to-tl text-center font-medium text-white hover:shadow-[0px_5px_30px_rgba(0,0,0,0.1)];
 }
 
 .btn-outline-primary {
