@@ -23,9 +23,6 @@ input#nav-toggle:checked ~ #nav-menu {
 .navbar {
   @apply relative flex flex-wrap items-center justify-between;
 }
-.navbar svg{
-  @apply fill-black
-}
 .navbar-brand {
   @apply text-xl font-semibold text-dark;
   image {
