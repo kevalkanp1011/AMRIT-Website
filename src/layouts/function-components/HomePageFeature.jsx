@@ -8,14 +8,14 @@ const HomePageFeature = ({ feature_list }) => {
         return (
           <div
             key={i}
-            className="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+            className="flex flex-col justify-between rounded-lg bg-palette-blue p-5 shadow-lg"
           >
             <div>
-              <h3 className="h4 text-xl lg:text-2xl">{item.title}</h3>
-              <p>{item.content}</p>
+              <h3 className="h4 text-xl lg:text-2xl text-white">{item.title}</h3>
+              <p className="text-white">{item.content}</p>
             </div>
             <span className="icon mt-4">
-              <ReactIcon size={24}/>
+              <ReactIcon className="text-black" size={24}/>
             </span>
           </div>
         );

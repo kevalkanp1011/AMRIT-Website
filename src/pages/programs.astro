@@ -29,6 +29,7 @@ const page_data = {
       <PageHeader page_data={page_data} />
       <p class="text-center">{program.data.subtitle}</p>
     </div>
+    <div>
     <div class="container">
     <div
       class="key-feature-grid mt-10 grid grid-cols-1 m-5 gap-7 lg:grid-cols-2 place-items-center"
@@ -45,6 +46,7 @@ const page_data = {
       }
     </div>
   </div>
+</div>
   </section>
 
   <Faq client:load data={program.data} />
@@ -53,9 +55,11 @@ const page_data = {
   <div class="h-screen flex justify-center items-center">
     <MapSvg />
   </div>
-  <div class="container">
-    <h1 class="text-center my-4">Our success stories</h1>
+  <div class="bg-palette-lightBlue py-5">
+  <div class="container ">
+    <h1 class="text-center my-4 text-white">Our success stories</h1>
 <SuccessStories posts={posts} />
+</div>
 </div>
     <script>
       var tooltipSpan = document.getElementById("details-box");

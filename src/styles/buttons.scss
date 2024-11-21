@@ -21,6 +21,10 @@
   @apply min-w-[150px] rounded-[50px] border-white bg-white text-center capitalize text-dark shadow-lg hover:shadow;
 }
 
+.btn-orange{
+  @apply min-w-[150px] rounded-[50px] border-white bg-palette-orange text-center capitalize text-white shadow-lg hover:shadow;
+}
+
 .btn-sm {
   @apply h-[42px] leading-[24px];
 }
