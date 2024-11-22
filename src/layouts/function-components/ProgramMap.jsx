@@ -5,7 +5,7 @@ function highlightStates(states) {
     if (node.nodeType === Node.ELEMENT_NODE) {
       const element = node;
       if (states.includes(element.id)) {
-        (element).style.fill = "#ff8567";
+        (element).style.fill = "#EA7A12";
         (element).style.cursor = "pointer";
         element.classList.add("transition-colors", "duration-300");
       } else {

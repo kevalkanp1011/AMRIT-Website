@@ -8,7 +8,7 @@ const HomePageFeature = ({ feature_list }) => {
         return (
           <div
             key={i}
-            className="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg border border-black"
+            className="flex flex-col justify-between rounded-lg bg-white p-5 shadow-md hover:shadow-lg transition-shadow duration-300"
           >
             <div>
               <h3 className="h4 text-xl lg:text-2xl">{item.title}</h3>
