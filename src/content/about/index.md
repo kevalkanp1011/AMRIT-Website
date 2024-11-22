@@ -24,7 +24,7 @@ counter:
     - name: "Engaged human resources in health"
       number: 150
       measurement: K
-      color: "#FE6019"
+      color: "#EA7A12"
     - name: "Aspirational Districts"
       number: 112
       color: "#FEC163"

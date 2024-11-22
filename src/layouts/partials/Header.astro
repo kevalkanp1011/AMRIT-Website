@@ -29,7 +29,7 @@ const { pathname } = Astro.url;
     <label
       id="show-button"
       for="nav-toggle"
-      class="order-2 flex cursor-pointer items-center lg:order-1 lg:hidden"
+      class="order-2 flex cursor-pointer items-center lg:order-1 lg:hidden text-black"
     >
       <svg class="h-6 fill-current" viewBox="0 0 20 20">
         <title>Menu Open</title>
@@ -41,7 +41,7 @@ const { pathname } = Astro.url;
       for="nav-toggle"
       class="order-2 hidden cursor-pointer items-center lg:order-1"
     >
-      <svg class="h-6 fill-current" viewBox="0 0 20 20">
+      <svg class="h-6 fill-black" viewBox="0 0 20 20">
         <title>Menu Close</title>
         <polygon
           points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
@@ -70,7 +70,7 @@ const { pathname } = Astro.url;
                   }`}
                 >
                   {menu.name}
-                  <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
+                  <svg class="h-4 w-4" viewBox="0 0 20 20">
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                   </svg>
                 </span>
