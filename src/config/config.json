@@ -15,7 +15,7 @@
     "pagination": 6,
     "summary_length": 200,
     "blog_folder": "blog",
-    "success_stories":"stories"
+    "success_stories":"success-stories"
   },
 
   "call_to_action": {
