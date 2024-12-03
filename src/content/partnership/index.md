@@ -32,10 +32,12 @@ donors:
 
 technical_partners:
     title: "Technical Partnerships"
-    subtitle: "Levergaing technical expertise"
+    subtitle: "Leveraging technical expertise"
     list:
     - id: 1
       image: "/images/Logo/wipro.webp"
+    - id: 4
+      image: "/images/Logo/c4gt.webp"
     - id: 2
       image: "/images/Logo/sam.png"
     - id: 3
