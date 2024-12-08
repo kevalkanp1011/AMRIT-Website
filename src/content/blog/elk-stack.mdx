@@ -1,0 +1,71 @@
+---
+title: Centralized Logging Solution for AMRIT's Distributed Infrastructure
+subtitle: Implementing an ELK Stack Logging Strategy for Comprehensive System Monitoring
+image: "/images/posts/elk-stack-logging.webp"
+author: AMRIT Technical Team
+date: 2024-12-08T10:00:00Z
+categories: ["DevOps", "Logging", "Monitoring"]
+featured: true
+draft: false
+link: ""
+---
+
+<strong>
+<h2>CHALLENGE: Distributed Logging Complexity</h2>
+</strong>
+
+AMRIT's infrastructure—spread across multiple servers located nationwide—presented significant logging and monitoring challenges. With servers dispersed across the country, tracking system performance, identifying issues, and maintaining comprehensive visibility became increasingly complex. The need for a centralized, efficient logging solution became paramount to ensure system reliability and quick troubleshooting.
+
+<strong>
+<h2>SOLUTION: ELK Stack Logging Infrastructure</h2>
+</strong>
+
+Over the course of implementing the logging strategy, we successfully developed a comprehensive centralized logging solution using the ELK stack. This solution included:
+
+<h3>Key Objectives:</h3>
+<ul>
+<li>
+<strong>ECS Logging Configuration:</strong> 
+Implemented standardized logging across all API services using Elastic Common Schema (ECS) for consistent log formatting.
+</li>
+
+<li>
+<strong>Log Collection Infrastructure:</strong> 
+Deployed Filebeat and APM agents to collect logs and traces from distributed servers, enabling comprehensive system monitoring.
+</li>
+
+<li>
+<strong>Source Identification:</strong> 
+Developed advanced tracking using `environment` property to precisely identify log sources across multiple server locations.
+</li>
+
+<li>
+<strong>Intelligent Log Management:</strong> 
+Created day-wise log sharding strategy to optimize index management and improve query efficiency.
+</li>
+</ul>
+
+<h3>Expected Outcomes:</h3>
+The implementation of the centralized ELK stack logging solution for AMRIT is expected to have the following outcomes:
+
+<ul>
+<li>
+<strong>Enhanced Visibility:</strong> 
+Provide a single, comprehensive view of logs across distributed infrastructure, enabling rapid issue identification and resolution.
+</li>
+
+<li>
+<strong>Efficient Resource Management:</strong> 
+Implement day-wise log sharding and 90-day retention policy to optimize storage and manage system resources effectively.
+</li>
+
+<li>
+<strong>Secure Access Control:</strong> 
+Develop a refined user access policy allowing controlled log and trace visibility for development teams.
+</li>
+
+<li>
+<strong>Improved System Reliability:</strong> 
+Enable faster troubleshooting and performance monitoring across AMRIT's nationwide server network.
+</li>
+</ul>
