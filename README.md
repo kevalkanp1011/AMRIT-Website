@@ -9,7 +9,7 @@ AMRIT is a cutting-edge health technology platform designed to revolutionize hea
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/AMRIT-Website/AMRIT.git
+   git clone https://github.com/PSMRI/AMRIT-Website
    cd AMRIT
    ```
 
