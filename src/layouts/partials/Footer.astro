@@ -56,14 +56,11 @@ const { copyright, location, email, phone, footer_description, credits } = confi
     </div>
   </div>
   <div class="container max-w-[1440px]">
-    <div
-      class="footer-copyright mx-auto border-t border-border pb-10 pt-7 text-center"
-    >
+    <div class="footer-copyright mx-auto border-t border-border pb-10 pt-7 text-center">
       <p class="content text-text" set:html={markdownify(copyright)} />
       <div class="my-4">
-        <a href={`${credits}`} class="underline">Made by ❤️ Amrit Community</a>
+        <a href={`${credits}`} class="hover:text-primary underline">Made with ❤️ by the AMRIT Community</a>
       </div>
     </div>
-    
   </div>
 </footer>
