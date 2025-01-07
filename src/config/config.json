@@ -26,7 +26,15 @@
       "link": "https://github.com/PSMRI/AMRIT"
     }
   },
-  "join_us":{
+  "program_cta":{
+    "title": "Together, we can transform the future of health",
+    "description": "Join our mission to revolutionize healthcare technology and impact millions of lives. Whether you're a government partner driving policy change, a knowledge partner advancing research, a technical partner building innovative solutions, or a community contributor enhancing our platform, your role is vital.",
+    "button": {
+      "label": "Become a partner",
+      "link": "/contact"
+    }
+  },
+  "partner_cta":{
     "title": "Partner with Us to Drive Impact",
     "description": "Join us in our mission to transform communities through innovation and collaboration. We are actively seeking partnerships with forward-thinking technical experts, generous donors, and visionary knowledge leaders. Together, we can create sustainable change and bring our vision to life.",
     "button": {
@@ -34,7 +42,6 @@
       "link": "/contact"
     }
   },
-
   "disqus": {
     "enable": true,
     "shortname": "themefisher-template",

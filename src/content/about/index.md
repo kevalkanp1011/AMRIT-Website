@@ -28,10 +28,6 @@ counter:
     - name: "Aspirational Districts"
       number: 112
       color: "#FEC163"
-    - name: "Impacting lives"
-      number: 160
-      measurement: M
-      color: "#FEC163"
 
 # Gallery
 gallery:
