@@ -1,9 +1,9 @@
 ---
-title: Streamlining AMRIT's deployment with CI-CD integration
-subtitle:  Enhancing the AMRIT CI/CD Pipeline - A robust CI-CD pipeline to improve development efficiency and reduce deployment risks.
+title: FLW and HLW deployment with CI-CD integration
+subtitle:  Enhancing the FLW/HLW CI/CD Pipeline - A robust CI-CD pipeline to improve development efficiency and reduce deployment risks.
 image: "/images/posts/cicd.webp"
 author: Keval kanpariya
-date: 2024-09-31T05:00:00Z
+date: 2025-01-31T05:00:00Z
 categories: ["Devops", "Android]
 featured: true
 draft: false
